@@ -1,0 +1,18 @@
+.design {
+    background-image:linear-gradient(360deg,
+            rgba(255, 255, 255, 0.8) 0%,
+            rgba(255, 255, 255, 0.8) 100%), url(../img/unique_bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 55px;
+		&__items {
+            position: relative;
+            img[alt="phone"] {
+                position: absolute;
+                top: 215px;
+                right: 210px;
+            }
+		}
+
+}

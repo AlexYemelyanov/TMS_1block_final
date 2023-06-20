@@ -1,0 +1,66 @@
+@import 'variables/variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $mainFont;
+    font-size: 18px;
+    font-weight: normal;
+    color: $textColor;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: $thirdFont;
+    font-weight: 700;
+    font-size: 144px;
+    line-height: 176px;
+    text-transform: uppercase;
+
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.33em;
+    line-height: 28px;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.about, .services, .design, .skillset, .team {
+    padding: 68px 0 90px 0;
+}
+
+@import 'main';
+@import 'about';
+@import 'futures';
+@import 'services';
+@import 'design';
+@import 'skillset';
+@import 'carousel';
+@import 'team';
+
+
+
+

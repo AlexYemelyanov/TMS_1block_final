@@ -1,0 +1,116 @@
+.skillset {
+
+		// .skillset__items
+
+        &__promo {
+            display: flex;
+            justify-content: space-between;
+            img {
+                width: calc(100%/2 - 30px);
+            }
+        }
+
+		&__items {
+            display: flex;
+            flex-direction: column;
+            width: calc(100%/2 - 30px);
+		}
+
+		
+
+		&__item {
+            width: 100%;
+            margin-bottom: 10px;
+            position: relative;;
+            &:last-child{
+                margin-bottom: 0;
+            }
+		}
+
+		// .skillset__accordion
+        .active {
+            background-color: #efefef;
+            &:after {
+                content: '\2227';
+                display: block;
+                clear: both;
+                position: absolute;
+                right: 15px;
+                font-size: 2em;
+                font-weight: 200;
+                color: $colorGrey;
+            }
+        }
+
+		&__accordion {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            column-gap: 40px;
+            width: 100%;
+            background-color: #fff;
+            color: $textColor;
+            cursor: pointer;
+            padding: 22px;
+            text-align: left;
+            border: 1px solid $colorGrey;
+            outline: none;
+            transition: 0.4s;
+            font-weight: 700;
+            font-size: 1.33em;
+            line-height: 28px;
+            text-transform: uppercase;
+            &:hover {
+                background-color:   #efefef;
+            }
+            i {
+                display: block;
+                width: 42px;
+                aspect-ratio: 1/1;
+                svg {
+                    width: 100%;
+                    height: 100%;
+                    path {
+                            fill: $mainColor;
+                    }
+                }
+            }
+            &:after {
+                content: '\2228';
+                display: block;
+                clear: both;
+                position: absolute;
+                right: 15px;
+                font-size: 2em;
+                font-weight: 200;
+                color: $colorGrey;
+            }
+		}
+
+		// .skillset__descr
+
+		&__descr {
+            overflow-x: hidden;
+            overflow-y: hidden;
+            height: 0px;
+            transition: height 0.6s ease-out;
+            border: 1px solid $colorGrey;
+            padding: 12px 85px 0px 12px;
+            line-height: 21px;
+            transform: scaleX(0);
+            position: relative;;
+            &::-webkit-scrollbar {
+                    width: 10px;
+                    position: absolute;
+                    right: 105px;
+                }
+                &::-webkit-scrollbar-track {
+                    border-radius: 10px;
+                    
+                }
+                &::-webkit-scrollbar-thumb {
+                    background: $mainColor;
+                    border-radius: 10px;
+                }
+		}
+}
