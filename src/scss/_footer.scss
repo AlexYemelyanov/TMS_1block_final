@@ -1,0 +1,248 @@
+.footer {
+    padding: 42px 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    column-gap: 30px;
+    ~p:last-child {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 0.72em;
+            line-height: 15px;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    &__mogo {
+        width: 31%;
+        
+        // .footer__mogo-logo
+
+        &-logo {
+            margin-bottom: 26px;
+            svg {
+                path {
+                    fill: $colorGrey;
+                }
+            }
+        }
+
+        // .footer__mogo-descr
+
+        &-descr {
+            font-weight: 400px;
+            color: $colorGrey;
+            line-height: 21px;
+            margin-bottom: 50px;
+        }
+
+        // .footer__mogo-flwrs
+
+        &-flwrs {
+            font-style: italic;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            text-transform: uppercase;
+            span {
+                font-weight: 700;
+                font-size: 2em;
+                line-height: 30px;
+                font-style: normal;
+                span {
+                    font-size: 0.5em;
+                }
+            }
+            margin-bottom: 18px;
+        }
+
+        // .footer__mogo-follow
+
+        &-follow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p {
+                font-style: italic;
+                font-weight: 400;
+                font-size: 0.72em;
+                line-height: 15px;
+                color: $colorGrey;
+            }
+            margin-bottom: 37px;
+        }
+
+        // .footer__mogo-social
+        
+        &-social {
+            width: 70%;
+            display: flex;
+            justify-content: space-around;
+            a {
+                // display: block;
+                align-self: center;
+                width: calc(100%/8 - 11px);
+                aspect-ratio: 1/1;
+                text-align: center;
+                transition: fill 0.7s;
+                svg {
+                    
+                    path {
+                        fill: $mainColor;
+                        transition: fill 0.7s;
+                    }
+                }
+                &:hover {
+                    svg {
+                        path {
+                            fill: $secondColor;
+                        }
+                    }
+                }
+            }
+        }
+
+        form {
+            width: 100%;
+            aspect-ratio: 1/0.15;
+            position: relative;
+            border: 1px solid $colorGrey;
+            input {
+                width: 64%;
+                height: 55px;
+                outline: none;
+                border: none;
+                transition: box-shadow 0.4s;
+                &::placeholder {
+                    text-align: center;
+                    color: $colorGrey;
+                }
+                &:focus-visible {
+                    box-shadow: 9px 9px 12px -2px $textCarousel;
+                }
+            }
+            button {
+                width: 36%;
+                height: 55px;
+                position: absolute;
+                text-transform: uppercase;
+                background-color: $mainColor;
+                color: #ffffff;
+                outline: none;
+                border: none;
+                font-weight: 700;
+                line-height: 21px;
+                &:hover {
+                    background-color: $btnHover;
+                }
+                &:active {
+                    background-color: $btnActive;
+                }
+            }
+        }
+
+    }
+
+    // .footer__divider
+
+    &__divider {
+        width: 100%;
+        height: 1px;
+        background-color: $colorGrey;
+        margin-bottom: 10px;
+    }
+
+    // .footer__blog
+
+    &__blog {
+        width: 39%;
+        h2 {
+            margin-bottom: 26px;
+        }
+        article {
+            width: 100%;
+            display: flex;
+            margin-bottom: 20px;
+            h4 {
+                margin-bottom: 19px;
+            }
+        }
+
+        &-img {
+            width: 90%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-right: 30px;
+        }
+        &-img1 {
+            background-image: url(../img/blog1.png);
+        }
+        &-img2 {
+            background-image: url(../img/blog2.png);
+        }
+        &-img3 {
+            background-image: url(../img/blog3.png);
+        }
+    }
+
+    // .footer__instagram
+
+    &__instagram {
+        width: 30%;
+        h2 {
+                margin-bottom: 26px;
+            }
+        a {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 15px;
+            text-decoration: underline;
+            text-transform: uppercase;
+            color: $textColor;
+        }
+        &-galery {
+            width: 90%;
+            height: 65%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 2px;
+            row-gap: 2px;
+            margin-bottom: 41px;
+        }
+        &-photo {
+            width: 100%;
+            aspect-ratio: 1/1;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        &-photo1 {
+            background-image: url(../img/insta1.png);
+        }
+         &-photo2 {
+            background-image: url(../img/insta2.png);
+        }
+        &-photo3 {
+            background-image: url(../img/insta3.png);
+        }
+        &-photo4 {
+            background-image: url(../img/insta4.png);
+        }
+        &-photo5 {
+            background-image: url(../img/insta5.png);
+        }
+        &-photo6 {
+            background-image: url(../img/insta6.png);
+        }
+        &-photo7 {
+            background-image: url(../img/insta7.png);
+        }
+        &-photo8 {
+            background-image: url(../img/insta8.png);
+        }
+        &-photo9 {
+            background-image: url(../img/insta9.png);
+        }
+    }
+}

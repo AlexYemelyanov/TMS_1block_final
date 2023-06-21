@@ -1,0 +1,23 @@
+.abstract {
+        background-color: #F8F8F8;
+        height: 211px;
+        width: 100%; 
+		// .abstract__items
+        .wrapper {
+            height: 100%;
+        }
+		&__items {
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            column-gap: 82px;
+		}
+
+		// .abstract__item
+
+		&__item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+		}
+}

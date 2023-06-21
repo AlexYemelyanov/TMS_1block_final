@@ -1,0 +1,89 @@
+.stories {
+
+    width: 100%;
+    height: 100%;
+
+    &__news {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    // .stories__blog
+
+    &__blog {
+        width: calc(100%/3 - 25px);
+    }
+
+    // .stories__img
+
+    &__img {
+        width: 100%;
+        aspect-ratio: 1/0.75;
+        position: relative;
+        background-image: url(../img/work2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 30px;
+        &-curtain {
+            width: 22%;
+            aspect-ratio: 1/1;
+            background: $mainColor;
+            position: absolute;
+            top: 60%;
+            left: -14px;
+            font-size: 2em;
+            font-weight: 700;
+            line-height: 30px;
+            text-align: center;
+            color: #ffffff;
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            span {
+                display: block;
+                font-size: 0.5em;
+                font-weight: 500;
+            }
+        }
+    }
+
+    // .stories__text
+
+    &__text {
+        h2 {
+            margin-bottom: 21px;
+        }
+        margin-bottom: 22px;
+    }
+
+    // .stories__comment
+
+    &__comment {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 32px;
+            margin-right: 16px;
+            color: $textColor;
+            svg {
+                height: 100%;
+                path {
+                    fill: $mainColor;
+            }
+            
+            margin-right: 16px;
+            }
+            span {
+                text-align: center;
+            }
+        }
+    }
+}

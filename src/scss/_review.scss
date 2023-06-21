@@ -1,0 +1,65 @@
+.review {
+    background-image:linear-gradient(360deg,
+            rgba(255, 255, 255, 0.8) 0%,
+            rgba(255, 255, 255, 0.8) 100%), url(../img/people_bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding-bottom: 0;
+    // .review__clients
+
+    &__clients {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    // .review__client
+
+    &__client {
+        width: calc(100%/2 - 50px);
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: 42px;
+        column-gap: 50px;
+    }
+
+    // .review__img
+
+    &__img {
+
+        img {
+            border: 0px solid black;
+            border-radius: 50%;
+        }
+    }
+
+    // .review__person
+
+    &__person {
+        h3 {
+            margin-bottom: 17px;
+        }
+        p {
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+    }
+
+    // .review__divider
+
+    &__divider {
+        width: 70px;
+        height: 4px;
+        background-color: $secondColor;
+        margin-bottom: 32px;
+    }
+
+    // .review__descr
+
+    &__descr {
+        padding: 26px 0;
+    }
+}

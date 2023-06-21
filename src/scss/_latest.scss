@@ -1,0 +1,18 @@
+.latest {
+    background-image: linear-gradient(360deg,
+                rgba(255, 255, 255, 0.8) 0%,
+                rgba(255, 255, 255, 0.8) 100%), url(../img/map_bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 42px 0 25px;
+        color: $secondColor;
+    .header {
+        &__suphead {
+            margin-bottom: 5px;
+        }
+        &__divider {
+            margin-bottom: 25px;
+        }
+    }
+}
