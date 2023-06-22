@@ -5,7 +5,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
-       
+            &__burger {
+                display: none;
+            }
             &__links {
                 display: flex;
                 width: 100%;
@@ -14,15 +16,19 @@
                 align-items: center;
                 
             }
-    
+            
+            &__promo {
+                margin: 0 auto;
+                 width: 90%;
+            }
             // .main__link
     
             &__link {
                 width: calc(100%/4 - 30px);
                 align-self: center;
-                color: $iconBackground;
-                
-    
+                color: $iconBackground;    
+
+
                 &-divider {
                     position: relative;;
                     width: 100%;
