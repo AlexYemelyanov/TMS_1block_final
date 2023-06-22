@@ -28,7 +28,7 @@
                     width: 100%;
                     height: 4px;
                     background-color: $iconBackground;
-                    transition: all 3s;
+                    transition: all 1s;
                     &::before {
                         content:'';
                         display: block;

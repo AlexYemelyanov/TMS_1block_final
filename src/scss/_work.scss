@@ -3,10 +3,11 @@
 		// .work__examples
 
 		&__examples {
-            width: 1510px;
+            width: 100%;
+            max-width: 1510px;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            margin-left: -170px;
+            
 		}
 
 		// .work__img
@@ -16,7 +17,7 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            width: calc(100% / 4 + 284px);
+            width: calc(100% / 4 + 219px);
             aspect-ratio: 1/1;
             
 			// .work__img-curtain
@@ -79,11 +80,8 @@
                 height: 100%;
                 background-image: url(../img/work5.png);
                 order: 3;
-                grid-row-start: 1;
-                grid-row-end: 3;
-                grid-column-start: 3;
-                grid-column-end: 4;
-
+                grid-row: 1/span 2;
+                grid-column: 3;
 			}
 
 			// .work__img-work6

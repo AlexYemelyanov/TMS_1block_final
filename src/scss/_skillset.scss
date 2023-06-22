@@ -98,15 +98,15 @@
             padding: 12px 85px 0px 12px;
             line-height: 21px;
             transform: scaleX(0);
-            position: relative;;
+            position: relative;
+            overflow-x: hidden;
             &::-webkit-scrollbar {
                     width: 10px;
                     position: absolute;
-                    right: 105px;
+                    right: 115px
                 }
-                &::-webkit-scrollbar-track {
-                    border-radius: 10px;
-                    
+                &::-webkit-scrollbar-track {    
+                    border-radius: 10px; 
                 }
                 &::-webkit-scrollbar-thumb {
                     background: $mainColor;

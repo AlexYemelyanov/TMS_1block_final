@@ -10,6 +10,7 @@
         background-color: #F8F8F8;
     }
     &__slideshow {
+        height: 100%;
         position: relative;
         margin: auto;
     }
@@ -24,13 +25,13 @@
         display: none;
         &-circle {
             display: flex;
-                width: 100%;
-                height: 100%;
-                justify-content: flex-start;
-                align-items: stretch;
-                padding: 0 64px;
-                column-gap: 30px;
-                display: none;      
+            width: 100%;
+            height: 100%;
+            justify-content: flex-start;
+            align-items: stretch;
+            padding: 0 64px;
+            column-gap: 30px;
+            display: none;      
         }
 
         &-fade {
@@ -41,17 +42,23 @@
         }
     }
     &__img {
-        width: 20%;
-        aspect-ratio: 1/1;
+        width: 17%;
         border: 2px solid $mainColor;
-        padding: 35px;
+        padding: 50px;
         &-circle {
             width: 20%;
             aspect-ratio: 1/1;
-            padding: 35px;
+            margin: 0 auto;
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+                height: 100%;
+            }
         }
         i {
             display: block;
+            margin: 0 auto;
             width: 100%;
             aspect-ratio: 1/1;
             svg {
@@ -106,6 +113,7 @@
             }
         }
         &__descr {
+            width: 74%;
             padding: 10px;
             padding-right: 50px;
             p {

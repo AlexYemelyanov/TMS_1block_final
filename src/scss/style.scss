@@ -10,6 +10,7 @@ body {
     font-family: $mainFont;
     font-size: 18px;
     font-weight: normal;
+    line-height: 21px;
     color: $textColor;
     background-color: #ffffff;
 }
@@ -29,10 +30,9 @@ h1, h2, h3, h4 {
 h1 {
     font-family: $thirdFont;
     font-weight: 700;
-    font-size: 144px;
-    line-height: 176px;
+    font-size: 8em;
+    line-height: 8.4rem;
     text-transform: uppercase;
-
 }
 
 h3, h2 {
